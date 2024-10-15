@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DriveSimulator
 {
     static class Program
     {
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
+        // Главная точка входа для приложения
         [STAThread]
         static void Main()
         {
@@ -20,3 +15,4 @@ namespace DriveSimulator
         }
     }
 }
+

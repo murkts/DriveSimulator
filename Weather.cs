@@ -1,36 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DriveSimulator
 {
     public enum WeatherCondition
     {
-        Sunny,
-        Rainy,
-        Windy,
-        Foggy
+        Солнечно,
+        Дождь,
+        Ветер,
+        Туман
     }
+
     public class Weather
     {
         public WeatherCondition Condition { get; private set; }
+
         public Weather(WeatherCondition condition)
         {
             Condition = condition;
         }
+
         public double GetSpeedMultiplier(Transport transport)
         {
             switch (Condition)
             {
-                case WeatherCondition.Sunny:
+                case WeatherCondition.Солнечно:
                     return 1.0;
-                case WeatherCondition.Rainy:
+                case WeatherCondition.Дождь:
                     return transport is GroundTransport ? 0.8 : 1.0;
-                case WeatherCondition.Windy:
+                case WeatherCondition.Ветер:
                     return transport is AirTransport ? 0.9 : 1.0;
-                case WeatherCondition.Foggy:
+                case WeatherCondition.Туман:
                     return 0.7;
                 default:
                     return 1.0;
