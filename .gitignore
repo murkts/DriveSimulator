@@ -1,0 +1,11 @@
+# Файлы сборки
+bin/
+obj/
+packages/
+# Прочие временные файлы
+*.user
+*.suo
+*.userprefs
+*.tlog
+*.log
+*.vs/
