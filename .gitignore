@@ -1,11 +1,16 @@
-# Файлы сборки
-bin/
-obj/
-packages/
-# Прочие временные файлы
+# Временные файлы
+*.tmp
+*.log
 *.user
 *.suo
-*.userprefs
-*.tlog
-*.log
-*.vs/
+
+# Директории сборки
+bin/
+obj/
+
+# Папка с файлами сборки
+[Dd]ebug/
+[Rr]elease/
+[Rr]elease[Oo]bjects/
+[Pp]ublish/
+
